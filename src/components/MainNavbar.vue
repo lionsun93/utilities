@@ -19,7 +19,10 @@
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <router-link to="/tool-one" class="nav-link">Tool One</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/tool-two" class="nav-link">Tool Two</router-link>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
