@@ -1,12 +1,9 @@
 <template>
   <div class='container'>
-    <h1>Home page</h1>
-    <p>This is the home page.</p>
+    <TestComponent />
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomePage',
-};
+<script setup>
+import TestComponent from '../components/TestComponent.vue';
 </script>
