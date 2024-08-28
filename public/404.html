@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      window.location.href = "/";
-    </script>
-  </head>
+
+<head>
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script type="text/javascript">
+    // Redirect all non-root requests to index.html, preserving the path
+    var path = window.location.pathname;
+    var base = '/your-repo-name'; // Replace with your repository name if needed
+    window.location.replace(base + path);
+  </script>
+</head>
+
+<body></body>
+
 </html>
