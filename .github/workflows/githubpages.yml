@@ -39,6 +39,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        # Added by myself the following list item
+      - name: List `dist` folder contents
+        run: ls -R ./dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

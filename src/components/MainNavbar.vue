@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body fixed-top px-3 border-bottom border-3">
-    <a class="navbar-brand" href="/">Utilities & Tools</a>
+    <a class="navbar-brand" href="./">Utilities & Tools</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,7 +16,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 d-flex align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="./">Home</a>
           </li>
           <li class="nav-item">
             <router-link to="/tool-one" class="nav-link">Tool One</router-link>

@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ToolOne from '../views/ToolOne.vue'
 import ToolTwo from '../views/ToolTwo.vue'
+import HomePage from '../views/HomePage.vue'
 
 const routes = [
     {
         path: '/',
         name: 'Home',
-        component: ToolOne,
+        component: HomePage,
     },
     {
         path: '/tool-one',
