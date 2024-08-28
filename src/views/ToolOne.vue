@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='container'>
     <h1>Tool One</h1>
     <p>This is the first math tool.</p>
   </div>
