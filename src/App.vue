@@ -3,13 +3,8 @@
   <router-view />
 </template>
 
-<script>
+<script setup>
 import MainNavbar from './components/MainNavbar.vue';
-export default {
-  components: {
-    MainNavbar,
-  },
-}
 </script>
 
 <style scoped></style>

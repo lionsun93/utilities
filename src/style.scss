@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
 $font-family-base: 'noto sans', sans-serif;
+$offcanvas-horizontal-width: 300px;
+
 @import "bootstrap/scss/bootstrap";
 
-$navbar-height: calc(56px + 1rem);
-
 body {
-    padding-top: $navbar-height;
+    padding-top: calc(56px + 1rem);
 }

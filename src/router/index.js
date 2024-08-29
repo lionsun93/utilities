@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import ToolOne from '../views/ToolOne.vue'
+import Converters from '../views/Converters.vue'
 import ToolTwo from '../views/ToolTwo.vue'
 import HomePage from '../views/HomePage.vue'
 
@@ -10,9 +10,9 @@ const routes = [
         component: HomePage,
     },
     {
-        path: '/tool-one',
-        name: 'ToolOne',
-        component: ToolOne,
+        path: '/converters',
+        name: 'Converters',
+        component: Converters,
     },
     {
         path: '/tool-two',
