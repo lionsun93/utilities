@@ -1,10 +1,10 @@
 <template>
   <div class='container'>
     <div class="row">
-      <div class="col-4">
+      <div class="col">
         <UnitConverter />
       </div>
-      <div class="col-4">
+      <div class="col">
         <div class="h3">Test Component</div>
         <TestComponent />
       </div>

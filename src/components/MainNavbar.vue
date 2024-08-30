@@ -1,22 +1,18 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg bg-body fixed-top px-3 border-bottom border-3">
+  <nav class="navbar navbar-expand-lg bg-body fixed-top px-3 border-bottom border-3">
     <router-link to="/" class="navbar-brand">Utilities &
       Tools</router-link>
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true"
-      tabindex="-1" id="navbarOffcanvasLg">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="navbarOffcanvasLg">
       <!-- Offcanvas header -->
       <div class="offcanvas-header">
         <div class="offcanvas-title" id="offcanvasNavbarLabel">
           Utilities &
           Tools</div>
-        <button type="button" class="btn-close"
-          data-bs-dismiss="offcanvas"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
       </div>
       <!-- offcanvas body -->
       <div class="offcanvas-body">
@@ -25,16 +21,14 @@
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/converters"
-              class="nav-link">Converters</router-link>
+            <router-link to="/converters" class="nav-link">Converters</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/tool-two" class="nav-link">Tool
               Two</router-link>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button"
-              data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Dropdown
             </a>
             <ul class="dropdown-menu">
@@ -49,7 +43,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item my-2">
+          <li class="nav-item">
             <ThemeSwitch />
           </li>
         </ul>
@@ -61,4 +55,5 @@
 import ThemeSwitch from './ThemeSwitch.vue';
 </script>
 
-<style></style>
+<style>
+</style>

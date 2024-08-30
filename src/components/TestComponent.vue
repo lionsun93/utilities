@@ -1,16 +1,13 @@
 <template>
-    <button class="btn btn-primary" @click="toggleState">Toggle State!</button>
-    <div :class="{ 'text-warning': warning, 'text-danger': danger }">warning text!</div>
+  <input @change="toggle" type="checkbox" name="" class="form-check-input" true-value='dark' false-value='light'
+    v-model="theme" />
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 
-const warning = ref(false)
-const danger = ref(true)
-
-const toggleState = () => {
-    warning.value = (warning.value === true) ? false : true
-    danger.value = (danger.value === true) ? false : true
+const theme = ref('light')
+const toggle = (e) => {
+  console.log(theme.value)
 }
 </script>
