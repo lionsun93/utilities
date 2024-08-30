@@ -1,13 +1,21 @@
 <template>
-  <input @change="toggle" type="checkbox" name="" class="form-check-input" true-value='dark' false-value='light'
-    v-model="theme" />
+  <h2>{{ pokemon.name }}</h2>
+  <ul class="list-group">
+    <div class="list-group-item" v-for="(sprite, key) in pokemon.sprites" :key="sprite">
+      <img :src="sprite" />
+    </div>
+  </ul>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 
-const theme = ref('light')
-const toggle = (e) => {
-  console.log(theme.value)
-}
+const pokemon = ref({})
+
+onMounted(
+  async () => {
+    const response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+    const data = await response.json()
+    pokemon.value = data
+  })
 </script>
