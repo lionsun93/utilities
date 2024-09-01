@@ -8,6 +8,11 @@
           class="bi bi-plus-square icon-big"></i></button>
     </div>
 
+    <button type="button" class="btn btn-secondary my-2"
+      @click="toggleHideCompleted">
+      {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
+    </button>
+
     <ul class="list-group my-2">
       <li v-for="todo in filteredTodos" :key="todo.id"
         class="list-group-item">
@@ -19,10 +24,6 @@
         </button>
       </li>
     </ul>
-    <button type="button" class="btn btn-primary my-2"
-      @click="toggleHideCompleted">
-      {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
-    </button>
   </div>
 
 </template>
@@ -33,9 +34,8 @@ import { ref, computed, onMounted } from 'vue'
 let id = 0
 
 const todos = ref([
-  { id: id++, text: 'Learn HTML', done: true },
-  { id: id++, text: 'Learn JavaScript', done: true },
-  { id: id++, text: 'Learn Vue', done: false },
+  // { id: id++, text: 'Learn HTML', done: true }, <=== template
+
 ])
 
 const newTodo = ref('')
