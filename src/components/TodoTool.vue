@@ -1,31 +1,28 @@
 <template>
-  <div class="border rounded p-2">
-    <h2>Todo Tool</h2>
-    <div class="input-group">
-      <input v-model.trim="newTodo" type="text"
-        class="form-control my-1" placeholder="Enter todo..." />
-      <button type="button" class="btn btn-primary my-1"
-        @click="addTodo"><i
-          class="bi bi-plus-square icon-big"></i></button>
-    </div>
-
-    <button type="button" class="btn btn-secondary my-2"
-      @click="toggleHideCompleted">
-      {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
-    </button>
-
-    <ul class="list-group my-2">
-      <li v-for="todo in filteredTodos" :key="todo.id"
-        class="list-group-item">
-        <input type="checkbox" class="form-check-input mx-2"
-          v-model="todo.done" />
-        <span :class="{ done: todo.done }"> {{ todo.text }}</span>
-        <button class="btn py-0 px-2 m-0" @click="removeTodo(todo)"><i
-            class="bi bi-x-square text-warning icon-big"></i>
-        </button>
-      </li>
-    </ul>
+  <div class="input-group">
+    <input v-model.trim="newTodo" type="text"
+      class="form-control my-1" placeholder="Enter todo..." />
+    <button type="button" class="btn btn-primary my-1"
+      @click="addTodo"><i
+        class="bi bi-plus-square icon-big"></i></button>
   </div>
+
+  <button type="button" class="btn btn-primary my-2"
+    @click="toggleHideCompleted">
+    {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
+  </button>
+
+  <ul class="list-group my-2">
+    <li v-for="todo in filteredTodos" :key="todo.id"
+      class="list-group-item">
+      <input type="checkbox" class="form-check-input mx-2"
+        v-model="todo.done" />
+      <span :class="{ done: todo.done }"> {{ todo.text }}</span>
+      <button class="btn py-0 px-2 m-0" @click="removeTodo(todo)"><i
+          class="bi bi-x-square text-warning icon-big"></i>
+      </button>
+    </li>
+  </ul>
 
 </template>
 

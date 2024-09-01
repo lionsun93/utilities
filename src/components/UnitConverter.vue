@@ -1,27 +1,25 @@
 <template>
-  <div class="border rounded p-2">
-    <div class="row">
-      <h2>Units Converter</h2>
-      <div class="col-12">
-        <label class="form-label" for="unitType">Unit Type</label>
-        <select class="form-select" id="unitType">
-          <option>Area</option>
-          <option>Data Transfer Rate</option>
-          <option>Digital Storage</option>
-          <option>Energy</option>
-          <option>Frequency</option>
-          <option>Fuel Economy</option>
-          <option>Length</option>
-          <option>Mass</option>
-          <option>Plane Angle</option>
-          <option>Pressure</option>
-          <option>Speed</option>
-          <option>Temperature</option>
-          <option>Time</option>
-          <option>Volume</option>
-        </select>
-      </div>
-      <!--     <div class="col-6">
+  <div class="row">
+    <div class="col-12">
+      <label class="form-label" for="unitType">Unit Type</label>
+      <select class="form-select" id="unitType">
+        <option>Area</option>
+        <option>Data Transfer Rate</option>
+        <option>Digital Storage</option>
+        <option>Energy</option>
+        <option>Frequency</option>
+        <option>Fuel Economy</option>
+        <option>Length</option>
+        <option>Mass</option>
+        <option>Plane Angle</option>
+        <option>Pressure</option>
+        <option>Speed</option>
+        <option>Temperature</option>
+        <option>Time</option>
+        <option>Volume</option>
+      </select>
+    </div>
+    <!--     <div class="col-6">
         <select class="form-label" for="celsius"></select>
         <input type="number" :id="firstInput" :name="firstInput" class="form-control" v-model="celsius"
           @input="celsiusToFahreheit" />
@@ -31,9 +29,8 @@
         <input type="number" :id="secondInput" :name="secondInput" class="form-control" v-model="fahrenheit"
           @input="fahreheitToCelsius" />
       </div> -->
-    </div>
-
   </div>
+
 </template>
 <script setup>
 import { ref } from 'vue'
