@@ -7,10 +7,13 @@
         class="bi bi-plus-square icon-big"></i></button>
   </div>
 
-  <button type="button" class="btn btn-primary my-2"
-    @click="toggleHideCompleted">
-    {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
-  </button>
+  <div class="form-check form-switch">
+    <input v-model="hideCompleted" class="form-check-input"
+      type="checkbox" id="hideCompleted" />
+    <label for="hideCompleted">
+      {{ hideCompleted ? 'Completed Hidden' : 'All Shown' }}
+    </label>
+  </div>
 
   <ul class="list-group my-2">
     <li v-for="todo in filteredTodos" :key="todo.id"
@@ -46,9 +49,6 @@ const filteredTodos = computed(() => {
   })
 })
 
-const toggleHideCompleted = () => {
-  hideCompleted.value = !hideCompleted.value
-}
 const addTodo = () => {
   if (newTodo.value.trim() !== '') {
     todos.value.push({ id: id++, text: newTodo.value })

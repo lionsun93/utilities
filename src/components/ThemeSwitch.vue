@@ -1,7 +1,7 @@
 <template>
   <button class="btn text-body" @click="toggleTheme">
-    <i v-if="globalTheme === 'light'" class="bi bi-sun-fill mx-1"></i>
-    <i v-else class="bi bi-moon-fill mx-1"></i>
+    <i v-if="globalTheme === 'light'" class="bi bi-sun mx-1"></i>
+    <i v-else class="bi bi-moon mx-1"></i>
   </button>
 </template>
 

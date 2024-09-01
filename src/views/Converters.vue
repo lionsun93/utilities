@@ -27,7 +27,7 @@
       </div>
       <div class="col-lg-4">
         <div class="card shadow">
-          <div class="card-header">Fetch Mock Todo</div>
+          <div class="card-header">Test Component</div>
           <div class="card-body">
             <Testcomponent />
           </div>
