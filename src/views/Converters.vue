@@ -1,10 +1,10 @@
 <template>
   <div class='container'>
     <div class="row">
-      <div class="col">
+      <div class="col-lg-4 m-1">
         <UnitConverter />
       </div>
-      <div class="col">
+      <div class="col-lg-4 m-1">
         <TodoTool />
       </div>
     </div>

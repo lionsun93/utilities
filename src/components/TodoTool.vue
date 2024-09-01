@@ -1,5 +1,6 @@
 <template>
   <div class="border rounded p-2">
+    <h2>Todo Tool</h2>
     <div class="input-group">
       <input v-model.trim="newTodo" type="text"
         class="form-control my-1" placeholder="Enter todo..." />
