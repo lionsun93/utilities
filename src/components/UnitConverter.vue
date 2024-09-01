@@ -1,5 +1,5 @@
 <template>
-  <div class="row border rounded p-2 g-2">
+  <div class="row border rounded p-2">
     <legend>Units Converter</legend>
     <div class="col-12">
       <label class="form-label" for="unitType">Unit Type</label>

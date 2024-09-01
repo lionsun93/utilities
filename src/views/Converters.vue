@@ -5,8 +5,7 @@
         <UnitConverter />
       </div>
       <div class="col">
-        <div class="h3">Test Component</div>
-        <TestComponent />
+        <TodoTool />
       </div>
     </div>
   </div>
@@ -14,5 +13,5 @@
 
 <script setup>
 import UnitConverter from '../components/UnitConverter.vue'
-import TestComponent from '../components/TestComponent.vue';
+import TodoTool from '../components/TodoTool.vue';
 </script>
