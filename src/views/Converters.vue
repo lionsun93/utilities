@@ -27,9 +27,9 @@
       </div>
       <div class="col-lg-4">
         <div class="card shadow">
-          <div class="card-header">Parent Test Component</div>
+          <div class="card-header">Test Component</div>
           <div class="card-body">
-            <ParentTestcomponent />
+            <TestComponent />
           </div>
         </div>
       </div>
@@ -41,5 +41,5 @@
 import UnitConverter from '../components/UnitConverter.vue'
 import TodoTool from '../components/TodoTool.vue';
 import FetchMockTodo from '../components/FetchMockTodo.vue';
-import ParentTestcomponent from '../components/ParentTestcomponent.vue';
+import TestComponent from '../components/TestComponent.vue';
 </script>

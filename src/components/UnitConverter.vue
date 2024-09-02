@@ -63,6 +63,8 @@ const handleSelectedUnitTypes = () => {
   unitTypeOptions.value = selectedUnitType.value.options
   selectedUnitTypeOption1.value = unitTypeOptions.value[0]
   selectedUnitTypeOption2.value = unitTypeOptions.value[1]
+  selectedUnitTypeOption1Previous = { ...selectedUnitTypeOption1.value }
+  selectedUnitTypeOption2Previous = { ...selectedUnitTypeOption2.value }
 }
 
 const handleSelectedUnitTypeOptions = (e) => {
@@ -76,24 +78,4 @@ const handleSelectedUnitTypeOptions = (e) => {
   selectedUnitTypeOption2Previous = { ...selectedUnitTypeOption2.value }
 }
 
-
-// const celsiusToFahreheit = () => {
-//   if (!isNaN(celsius.value)) {
-//     const result = celsius.value * (9 / 5) + 32;
-//     fahrenheit.value = round(result);
-//     console.log(result)
-//   } else {
-//     fahrenheit.value = ''
-//   }
-// }
-
-// const fahreheitToCelsius = () => {
-//   if (!isNaN(fahrenheit.value)) {
-//     const result = (fahrenheit.value - 32) * (5 / 9);
-//     celsius.value = round(result)
-//     console.log(result)
-//   } else {
-//     celsius.value = ''
-//   }
-// }
 </script>
