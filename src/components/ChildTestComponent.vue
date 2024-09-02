@@ -1,7 +1,5 @@
 <template>
-  <h2>Child component</h2>
+  <slot>Fallback content</slot>
 </template>
 <script setup>
-const emit = defineEmits(['response'])
-emit('response', 'Hello from child!')
 </script>
